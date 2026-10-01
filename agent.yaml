@@ -1,0 +1,24 @@
+spec_version: "0.1.0"
+name: manufacturing-quality-agent
+version: 1.0.0
+description: A framework-independent agent for manufacturing quality inspection, statistical process control, defect triage, and process capability analysis.
+license: MIT
+skills:
+  - quality-inspection
+  - statistical-process-control
+  - defect-triage
+  - process-capability
+  - quality-reporting
+tools:
+  - inspect-measurements
+  - calculate-spc
+  - classify-defect
+  - calculate-capability
+  - generate-quality-report
+runtime:
+  max_turns: 20
+  timeout: 30
+metadata:
+  domain: manufacturing-quality
+  implementation: python
+  portability: framework-independent
