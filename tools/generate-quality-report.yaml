@@ -1,0 +1,24 @@
+name: generate-quality-report
+description: Assemble structured findings into a traceable quality report without inventing missing measurements.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    title:
+      type: string
+    findings:
+      type: array
+      items:
+        type: string
+  required: [title, findings]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: generate-quality-report.py
+  runtime: python
+  timeout: 30
+annotations:
+  requires_confirmation: false
+  read_only: true
+  cost: none

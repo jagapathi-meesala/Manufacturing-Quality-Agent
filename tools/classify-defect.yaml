@@ -1,0 +1,28 @@
+name: classify-defect
+description: Classify a manufacturing defect from measurable impact and recurrence evidence.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    defect_type:
+      type: string
+    severity:
+      type: string
+      enum: [critical, major, minor, observation]
+    occurrences:
+      type: integer
+      minimum: 0
+    safety_impact:
+      type: boolean
+  required: [defect_type, severity, occurrences, safety_impact]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: classify-defect.py
+  runtime: python
+  timeout: 30
+annotations:
+  requires_confirmation: false
+  read_only: true
+  cost: none

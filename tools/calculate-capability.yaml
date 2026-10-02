@@ -1,0 +1,26 @@
+name: calculate-capability
+description: Calculate Cp and Cpk from measurements and specification limits.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    measurements:
+      type: array
+      items:
+        type: number
+    lower_spec:
+      type: number
+    upper_spec:
+      type: number
+  required: [measurements, lower_spec, upper_spec]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: calculate-capability.py
+  runtime: python
+  timeout: 30
+annotations:
+  requires_confirmation: false
+  read_only: true
+  cost: none

@@ -1,0 +1,22 @@
+name: inspect-measurements
+description: Validate numeric manufacturing measurements and summarize their distribution.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    measurements:
+      type: array
+      items:
+        type: number
+  required: [measurements]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: inspect-measurements.py
+  runtime: python
+  timeout: 30
+annotations:
+  requires_confirmation: false
+  read_only: true
+  cost: none

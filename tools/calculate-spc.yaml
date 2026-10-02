@@ -1,0 +1,22 @@
+name: calculate-spc
+description: Calculate mean, sigma, control limits, and out-of-control observations using three-sigma limits.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    measurements:
+      type: array
+      items:
+        type: number
+  required: [measurements]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: calculate-spc.py
+  runtime: python
+  timeout: 30
+annotations:
+  requires_confirmation: false
+  read_only: true
+  cost: none
