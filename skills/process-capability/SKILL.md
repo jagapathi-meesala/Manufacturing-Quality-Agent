@@ -1,3 +1,8 @@
+---
+name: process-capability
+description: Calculate manufacturing process capability metrics from measurements and specification limits.
+---
+
 # Process Capability
 
 ## Purpose

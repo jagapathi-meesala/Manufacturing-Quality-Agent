@@ -1,3 +1,8 @@
+---
+name: defect-triage
+description: Prioritize reported manufacturing defects using deterministic severity and safety rules.
+---
+
 # Defect Triage
 
 ## Purpose

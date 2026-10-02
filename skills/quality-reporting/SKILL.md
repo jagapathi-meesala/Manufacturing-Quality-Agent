@@ -1,3 +1,8 @@
+---
+name: quality-reporting
+description: Create traceable manufacturing quality summaries from supplied findings.
+---
+
 # Quality Reporting
 
 ## Purpose

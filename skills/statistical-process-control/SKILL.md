@@ -1,3 +1,8 @@
+---
+name: statistical-process-control
+description: Evaluate manufacturing measurements using three-sigma statistical process control screening.
+---
+
 # Statistical Process Control
 
 ## Purpose

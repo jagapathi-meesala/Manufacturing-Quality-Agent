@@ -1,3 +1,8 @@
+---
+name: quality-inspection
+description: Inspect and summarize manufacturing measurement data.
+---
+
 # Quality Inspection
 
 ## Purpose
