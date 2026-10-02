@@ -10,4 +10,4 @@ def test_required_explainability_headings():
 
 def test_declared_skills_exist():
     for name in ["quality-inspection","statistical-process-control","defect-triage","process-capability","quality-reporting"]:
-        assert (ROOT/"skills"/f"{name}.md").is_file()
+        assert (ROOT/"skills"/name/"SKILL.md").is_file()

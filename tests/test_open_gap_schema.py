@@ -9,5 +9,5 @@ def test_manifest_matches_open_gap_static_schema():
     errors=list(Draft202012Validator(schema).iter_errors(manifest))
     assert not errors, [e.message for e in errors]
     assert manifest["spec_version"]=="0.1.0"
-    assert all((ROOT/"skills"/f"{s}.md").exists() for s in manifest["skills"])
+    assert all((ROOT/"skills"/s/"SKILL.md").exists() for s in manifest["skills"])
     assert all((ROOT/"tools"/f"{t}.py").exists() for t in manifest["tools"])
